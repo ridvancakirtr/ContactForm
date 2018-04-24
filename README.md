@@ -3,3 +3,16 @@
 <h2>Project Aim</h2>
 
 <p>This project aim is user may send a mail someone by using this web application.</p>
+
+<h2>How to Use</h2>
+
+<ol>
+  <li>Install Apache Server on your pc.</li>
+  <li>Install PHP on your pc.</li>
+  <li>Copy project to www folder in your pc.</li>
+  <li>Start apache server on your localhost.</li>
+  <li>Open web browser and connect http://localhost on your pc</li>
+  <li>And enjoy it. </li>
+</ol>
+  
+  
