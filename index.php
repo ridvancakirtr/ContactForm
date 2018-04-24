@@ -94,7 +94,13 @@ if($_POST){
         $mail->SetFrom("phpmailsender@yandex.com", $name);//info@ridvancakir.com.tr
 
         $mail->AddAddress($email); // Gönderilecek kişi
-	$mail->AddCC($ccemail);
+	if(!empty($ccemail)){
+		if(!filter_var($ccemail, FILTER_VALIDATE_EMAIL)){
+                	echo "<script> alert('Enter valid cc email'); </script>";
+                	exit();
+        	}
+        	$mail->AddCC($ccemail);
+        }
         $mail->Subject = $subject;
         $mail->Body = $message;
 
