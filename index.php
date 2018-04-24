@@ -73,16 +73,16 @@ if($_POST){
         $mail->IsSMTP();
         $mail->SMTPDebug = 1;
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'tls';
-        $mail->Host = "smtp.yandex.com";
-        $mail->Port = 587; 
+        $mail->SMTPSecure = 'tls';//ssl
+        $mail->Host = "smtp.yandex.com";//srvc184.turhost.com
+        $mail->Port = 587; //465 for ssl
         $mail->IsHTML(true);
         $mail->SetLanguage("tr", "phpmailer/language");
         $mail->CharSet  ="utf-8";
 
-        $mail->Username = "phpmailsender";
-        $mail->Password = "cGhwbWFpbHNlbmRlcg==";
-        $mail->SetFrom("phpmailsender@yandex.com", $name);
+        $mail->Username = "phpmailsender";//info@ridvancakir.com.tr
+        $mail->Password = "cGhwbWFpbHNlbmRlcg==";//*********
+        $mail->SetFrom("phpmailsender@yandex.com", $name);//info@ridvancakir.com.tr
 
         $mail->AddAddress($email); // Gönderilecek kişi
 
