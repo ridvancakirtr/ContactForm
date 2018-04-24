@@ -34,7 +34,15 @@
 							<div class="invalid-feedback">Please enter subject</div>
 						</div>
 					</div>
-
+					
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label>CCMail </label>
+							<input type="text" name="ccmail" class="form-control" placeholder="Please enter a subject"/>
+							<div class="invalid-feedback">Please enter cc</div>
+						</div>
+					</div>
+					
 					<div class="form-row">
 						<div class="form-group col-md-12">
 							<label>Message *</label>
@@ -58,6 +66,7 @@
 if($_POST){
         $name = htmlspecialchars($_POST['name']);
         $email = htmlspecialchars($_POST['email']);
+	$ccemail = htmlspecialchars($_POST['ccmail']);
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 echo "<script> alert('Enter valid email'); </script>";
                 exit();
@@ -85,7 +94,7 @@ if($_POST){
         $mail->SetFrom("phpmailsender@yandex.com", $name);//info@ridvancakir.com.tr
 
         $mail->AddAddress($email); // Gönderilecek kişi
-
+	$mail->AddCC($ccemail);
         $mail->Subject = $subject;
         $mail->Body = $message;
 
