@@ -38,8 +38,8 @@
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label>CCMail </label>
-							<input type="text" name="ccmail" class="form-control" placeholder="Please enter a subject"/>
-							<div class="invalid-feedback">Please enter cc</div>
+							<input type="text" name="ccmail" class="form-control" placeholder="Please enter a cc email"/>
+							<div class="invalid-feedback">Please enter a cc email</div>
 						</div>
 					</div>
 					
