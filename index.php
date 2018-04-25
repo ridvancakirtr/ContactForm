@@ -18,8 +18,6 @@
 							<input type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" />
 							<div class="invalid-feedback">Please enter your name</div>
 						</div>
-					</div>
-					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label>Email *</label>
 							<input type="email" name="email" class="form-control" placeholder="Please enter a email *" required="required" />
@@ -33,9 +31,6 @@
 							<input type="text" name="subject" class="form-control" placeholder="Please enter a subject *" required="required" />
 							<div class="invalid-feedback">Please enter subject</div>
 						</div>
-					</div>
-					
-					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label>CCMail </label>
 							<input type="text" name="ccmail" class="form-control" placeholder="Please enter a cc email"/>
