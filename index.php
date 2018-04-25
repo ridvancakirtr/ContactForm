@@ -32,7 +32,7 @@
 							<div class="invalid-feedback">Please enter subject</div>
 						</div>
 						<div class="form-group col-md-6">
-							<label>CCMail </label>
+							<label>CC Mail </label>
 							<input type="text" name="ccmail" class="form-control" placeholder="Please enter a cc email"/>
 							<div class="invalid-feedback">Please enter a cc email</div>
 						</div>
